@@ -1,0 +1,29 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-turquoise: #008080;
+  --primary-light-gray: #c3c3c3;
+  --primary-dark-gray: #818181;
+  --primary-white: #fdffff;
+  --primary-blue: #0827f5;
+  --primary-black: #000000;
+  --primary-pink: #ff0081;
+}
+
+.W95Border {
+  border-left: 2px solid var(--primary-white);
+  border-top: 2px solid var(--primary-white);
+  box-shadow: 2px 2px 4px 0px var(--primary-black);
+}
+
+.timeAndDateBorder {
+  border-left: 2px solid var(--primary-dark-gray);
+  border-top: 2px solid var(--primary-dark-gray);
+  border-right: 2px solid var(--primary-white);
+  border-bottom: 2px solid var(--primary-white);
+}
