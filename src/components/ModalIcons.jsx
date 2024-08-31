@@ -44,4 +44,3 @@ export default ModalIcons;
 // Draggable icons?
 // If so, double click to open, single click and hold to drag
 // Resizing Modal windows?
-// Draggable modal windows

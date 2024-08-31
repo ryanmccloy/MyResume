@@ -27,3 +27,29 @@
   border-right: 2px solid var(--primary-white);
   border-bottom: 2px solid var(--primary-white);
 }
+
+.slick-prev,
+.slick-next {
+  z-index: 1 !important; /* Ensure arrows are above other elements */
+}
+
+.slick-prev:before {
+  content: "←" !important; /* Unicode for left arrow */
+  font-size: 30px !important; /* Ensure the arrow is visible */
+
+  color: var(--primary-white) !important; /* Set a visible color */
+}
+
+.slick-next:before {
+  content: "→" !important; /* Unicode for left arrow */
+  font-size: 30px !important; /* Ensure the arrow is visible */
+  color: var(--primary-white) !important; /* Set a visible color */
+}
+
+.slick-prev {
+  left: 10px !important; /* Adjust positioning if needed */
+}
+
+.slick-next {
+  right: 20px !important; /* Adjust positioning if needed */
+}

@@ -1,6 +1,7 @@
+import { ModalProvider } from "./contexts/ModalProvider";
+
 import HomePage from "./components/HomePage";
 import ModalIcons from "./components/ModalIcons";
-import { ModalProvider } from "./contexts/ModalProvider";
 import Toolbar from "./features/Toolbar/Toolbar";
 
 function App() {

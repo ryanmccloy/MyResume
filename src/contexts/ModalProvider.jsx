@@ -1,5 +1,7 @@
 import { createContext, useContext, useState } from "react";
 
+import AboutMe from "../features/AboutMe/AboutMe";
+
 const ResumeModalContext = createContext();
 
 const resumeModals = {
@@ -45,7 +47,7 @@ export const ModalProvider = ({ children }) => {
   const renderModalContent = function (key) {
     switch (key) {
       case "about":
-        return <div>About Me Content</div>;
+        return <AboutMe />;
       case "portfolio":
         return <div>Portfolio Content</div>;
       case "education":
