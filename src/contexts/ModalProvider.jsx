@@ -1,6 +1,8 @@
 import { createContext, useContext, useState } from "react";
 
 import AboutMe from "../features/AboutMe/AboutMe";
+import Education from "../features/Education/Education";
+import WorkHistoy from "../features/WorkHistory/WorkHistoy";
 
 const ResumeModalContext = createContext();
 
@@ -51,9 +53,10 @@ export const ModalProvider = ({ children }) => {
       case "portfolio":
         return <div>Portfolio Content</div>;
       case "education":
-        return <div>Education Content</div>;
+        return <Education />;
+
       case "work":
-        return <div>Work History Content</div>;
+        return <WorkHistoy />;
       default:
         return null;
     }

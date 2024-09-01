@@ -39,8 +39,3 @@ function ModalIcons() {
 }
 
 export default ModalIcons;
-
-// Modal content
-// Draggable icons?
-// If so, double click to open, single click and hold to drag
-// Resizing Modal windows?
