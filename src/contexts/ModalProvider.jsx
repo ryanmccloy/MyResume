@@ -3,6 +3,10 @@ import { createContext, useContext, useState } from "react";
 import AboutMe from "../features/AboutMe/AboutMe";
 import Education from "../features/Education/Education";
 import WorkHistoy from "../features/WorkHistory/WorkHistoy";
+import Nimmo from "../features/WorkHistory/Nimmo";
+import Canucks from "../features/WorkHistory/Canucks";
+import Zoe from "../features/WorkHistory/Zoe";
+import Peaks from "../features/WorkHistory/Peaks";
 
 const ResumeModalContext = createContext();
 
@@ -23,6 +27,22 @@ const resumeModals = {
     name: "Work History",
     icon: "work-history.png",
   },
+  zoe: {
+    name: "Zoe Personalised Nutrition",
+    icon: "zoe-icon.png",
+  },
+  nimmo: {
+    name: "Nimmo Bay",
+    icon: "nimmobay.png",
+  },
+  canucks: {
+    name: "Canucks Entertainment",
+    icon: "canucks-icon.png",
+  },
+  peaks: {
+    name: "Peaks Hotel and Suites",
+    icon: "peaks-icon.png",
+  },
 };
 
 export const ModalProvider = ({ children }) => {
@@ -31,6 +51,10 @@ export const ModalProvider = ({ children }) => {
     portfolio: false,
     education: false,
     work: false,
+    zoe: false,
+    nimmo: false,
+    canucks: false,
+    peaks: false,
   });
 
   const [activeModal, setActiveModal] = useState(null);
@@ -57,6 +81,14 @@ export const ModalProvider = ({ children }) => {
 
       case "work":
         return <WorkHistoy />;
+      case "zoe":
+        return <Zoe />;
+      case "nimmo":
+        return <Nimmo />;
+      case "canucks":
+        return <Canucks />;
+      case "peaks":
+        return <Peaks />;
       default:
         return null;
     }

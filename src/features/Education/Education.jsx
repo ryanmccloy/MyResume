@@ -17,7 +17,7 @@ function Education() {
   if (error) return <div>Error: {error.message}</div>;
 
   return (
-    <div className="flex flex-col gap-[30px] pb-[10px]">
+    <div className="flex flex-col gap-[30px] pb-[10px] pr-[40px]">
       {info.map((entry) => (
         <EducationEntry key={entry.id} entry={entry} />
       ))}

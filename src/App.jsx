@@ -8,7 +8,7 @@ function App() {
   return (
     <HomePage>
       <ModalProvider>
-        <ModalIcons />
+        <ModalIcons where="homepage" />
       </ModalProvider>
       <Toolbar />
     </HomePage>

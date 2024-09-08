@@ -16,7 +16,7 @@ function ModalHeading({ name, icon, onClose, isDragging }) {
       </div>
 
       <button
-        className="W95Border bg-primary-lightGray px-sm text-primary-darkGray non-draggable"
+        className="W95Border bg-primary-lightGray px-sm text-primary-darkGray non-draggable hover:text-primary-black transition-all duration-400"
         onClick={handleButtonClick}
       >
         X

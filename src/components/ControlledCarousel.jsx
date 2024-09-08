@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const images = [
+const aboutMeImages = [
   "1",
   "2",
   "3",
@@ -26,7 +26,27 @@ const images = [
   "21",
 ];
 
-function ImageCarousel() {
+const nimmoImages = [
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+];
+
+const peaksImages = ["1", "2", "3", "4", "5", "6"];
+
+const canucksImages = ["1", "2", "3", "4", "5"];
+
+function ControlledCarousel({ where }) {
   const settings = {
     dots: false, // Show navigation dots
     arrows: true,
@@ -37,19 +57,47 @@ function ImageCarousel() {
     variableWidth: true, // Allows each slide to have a variable width
   };
 
+  const images =
+    where === "aboutme"
+      ? aboutMeImages
+      : where === "nimmo"
+      ? nimmoImages
+      : where === "canucks"
+      ? canucksImages
+      : where === "peaks"
+      ? peaksImages
+      : [];
+
+  const fileType =
+    where === "aboutme"
+      ? "jpg"
+      : where === "nimmo"
+      ? "png"
+      : where === "canucks"
+      ? "png"
+      : where === "peaks"
+      ? "png"
+      : [];
+
   return (
-    <Slider {...settings}>
-      {images.map((image, index) => (
-        <div key={index}>
-          <img
-            src={`/Images/About Me/${image}.jpg`}
-            alt={`Image ${index + 1}`}
-            className="h-[200px] pr-1"
-          />
-        </div>
-      ))}
-    </Slider>
+    images.length > 0 && (
+      <Slider {...settings}>
+        {images.map((image, index) => (
+          <div key={index}>
+            <img
+              src={`/Images/${where}/${image}.${fileType}`}
+              alt={`Image ${index + 1}`}
+              className={` pr-1 ${
+                where === "canucks" || where === "peaks"
+                  ? "h-[150px]"
+                  : "h-[200px]"
+              }`}
+            />
+          </div>
+        ))}
+      </Slider>
+    )
   );
 }
 
-export default ImageCarousel;
+export default ControlledCarousel;

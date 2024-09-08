@@ -1,5 +1,11 @@
+import ModalIcons from "../../components/ModalIcons";
+
 function WorkHistoy() {
-  return <div>Work History</div>;
+  return (
+    <div>
+      <ModalIcons where="work" />
+    </div>
+  );
 }
 
 export default WorkHistoy;

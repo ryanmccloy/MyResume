@@ -50,7 +50,7 @@ function Modal({ name, icon, children, onClose, onClick, isActive }) {
     >
       <div
         ref={modalRef}
-        className="absolute W95Border bg-primary-lightGray p-[3px] top-[20%] cursor-default  w-[80vw] max-h-[70vh] flex flex-col gap-sm"
+        className="absolute W95Border bg-primary-lightGray p-[3px] top-[20%] cursor-default  max-w-[80vw] max-h-[70vh] flex flex-col gap-sm sm:max-w-[50vw]"
         // style={{ left: leftPosition, zIndex: isActive ? 1000 : 1 }}
         style={{ zIndex: isActive ? 1000 : 1 }}
         onClick={onClick}

@@ -26,7 +26,7 @@ function AboutMe() {
         ))}
       </div>
 
-      <ControlledCarousel />
+      <ControlledCarousel where="aboutme" />
     </div>
   );
 }
