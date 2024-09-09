@@ -6,8 +6,8 @@ function ModalHeading({ name, icon, onClose, isDragging }) {
 
   return (
     <div
-      className={`bg-primary-blue p-sm flex justify-between modal-heading cursor-${
-        isDragging ? "grabbing" : "grab"
+      className={`bg-primary-blue p-sm flex justify-between modal-heading ${
+        isDragging ? "cursor-grabbing" : "cursor-grab"
       }`}
     >
       <div className="flex gap-[5px]">

@@ -15,6 +15,11 @@
   --primary-pink: #ff0081;
 }
 
+html,
+body {
+  overflow: hidden;
+}
+
 .W95Border {
   border-left: 2px solid var(--primary-white);
   border-top: 2px solid var(--primary-white);
