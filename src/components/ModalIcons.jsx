@@ -24,7 +24,10 @@ function ModalIcons({ where }) {
               <ModalIcon
                 name={info.name}
                 icon={info.icon}
-                onClick={() => toggleModal(key)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleModal(key);
+                }}
                 where={where}
               />
             </div>

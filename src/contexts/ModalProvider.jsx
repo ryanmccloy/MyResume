@@ -60,13 +60,22 @@ export const ModalProvider = ({ children }) => {
   const [activeModal, setActiveModal] = useState(null);
 
   const toggleModal = function (key) {
-    setOpenModals((prevState) => ({
-      ...prevState,
-      [key]: !prevState[key],
-    }));
+    setOpenModals((prevState) => {
+      const isOpening = !prevState[key];
+
+      if (isOpening) {
+        bringModalToFront(key);
+      }
+
+      return {
+        ...prevState,
+        [key]: !prevState[key],
+      };
+    });
   };
 
   const bringModalToFront = function (key) {
+    console.log(`Bringing ${key} to the front `);
     setActiveModal(key);
   };
 

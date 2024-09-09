@@ -31,18 +31,20 @@ function Modal({ name, icon, children, onClose, onClick, isActive }) {
     return () => window.removeEventListener("resize", calculateBounds);
   }, []);
 
-  // Wrap modal content in React Portal to render it at the root level
   return (
     <Draggable
       handle=".modal-heading"
       cancel=".non-draggable"
-      onStart={() => setIsDragging(true)}
+      onStart={() => {
+        setIsDragging(true);
+        onClick();
+      }}
       onStop={() => setIsDragging(false)}
       bounds={bounds}
     >
       <div
         ref={modalRef}
-        className="absolute W95Border bg-primary-lightGray p-[3px] top-[20%] cursor-default max-w-[80vw] max-h-[70vh] flex flex-col gap-sm sm:max-w-[50vw]"
+        className="absolute W95Border bg-primary-lightGray p-[3px] top-[20%] cursor-default max-w-[80vw] max-h-[70vh] flex flex-col gap-sm left-[15vw] sm:max-w-[50vw]"
         style={{ zIndex: isActive ? 1000 : 1 }}
         onClick={onClick}
       >
