@@ -75,7 +75,6 @@ export const ModalProvider = ({ children }) => {
   };
 
   const bringModalToFront = function (key) {
-    console.log(`Bringing ${key} to the front `);
     setActiveModal(key);
   };
 

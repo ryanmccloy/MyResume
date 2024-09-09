@@ -1,7 +1,17 @@
-function CurrentTime() {
-  const currentTime = new Date().toLocaleTimeString();
+import { useEffect, useState } from "react";
 
-  const formattedTime = currentTime.slice(0, currentTime.length - 3);
+function CurrentTime() {
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 10000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const formattedTime = currentTime.toLocaleTimeString().slice(0, 5);
 
   return <div>{formattedTime}</div>;
 }
