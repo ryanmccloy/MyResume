@@ -33,6 +33,13 @@ body {
   border-bottom: 2px solid var(--primary-white);
 }
 
+.paragraphStyling {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  letter-spacing: 0.05em;
+}
+
 .slick-prev,
 .slick-next {
   z-index: 1 !important; /* Ensure arrows are above other elements */

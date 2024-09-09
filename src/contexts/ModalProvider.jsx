@@ -7,6 +7,15 @@ import Nimmo from "../features/WorkHistory/Nimmo";
 import Canucks from "../features/WorkHistory/Canucks";
 import Zoe from "../features/WorkHistory/Zoe";
 import Peaks from "../features/WorkHistory/Peaks";
+import Portfolio from "../features/Portfolio/Portfolio";
+import ParadisePaddles from "../features/Portfolio/ParadisePaddles";
+import MagicBall from "../features/Portfolio/MagicBall";
+import ShoppingList from "../features/Portfolio/ShoppingList";
+import FullyFuelled from "../features/Portfolio/FullyFuelled";
+import PizzaApp from "../features/Portfolio/PizzaApp";
+import TheWildOasis from "../features/Portfolio/TheWildOasis";
+import TravelApp from "../features/Portfolio/TravelApp";
+import MoviesApp from "../features/Portfolio/MoviesApp";
 
 const ResumeModalContext = createContext();
 
@@ -43,6 +52,38 @@ const resumeModals = {
     name: "Peaks Hotel and Suites",
     icon: "peaks-icon.png",
   },
+  ball: {
+    name: "8-Ball",
+    icon: "8-ball-icon.png",
+  },
+  paradise: {
+    name: "Paradise Paddles",
+    icon: "pp-icon.png",
+  },
+  shopping: {
+    name: "Shopping List",
+    icon: "shopping-icon.png",
+  },
+  fuelled: {
+    name: "Fully Fuelled",
+    icon: "ff-icon.png",
+  },
+  pizza: {
+    name: "Pizza App",
+    icon: "pizza-icon.png",
+  },
+  oasis: {
+    name: "The Wild Oasis",
+    icon: "wild-oasis-icon.png",
+  },
+  travel: {
+    name: "Travel App",
+    icon: "travel-icon.png",
+  },
+  movie: {
+    name: "Movie App",
+    icon: "movies-icon.png",
+  },
 };
 
 export const ModalProvider = ({ children }) => {
@@ -55,6 +96,14 @@ export const ModalProvider = ({ children }) => {
     nimmo: false,
     canucks: false,
     peaks: false,
+    paradise: false,
+    ball: false,
+    shopping: false,
+    fuelled: false,
+    pizza: false,
+    oasis: false,
+    travel: false,
+    movie: false,
   });
 
   const [activeModal, setActiveModal] = useState(null);
@@ -83,7 +132,7 @@ export const ModalProvider = ({ children }) => {
       case "about":
         return <AboutMe />;
       case "portfolio":
-        return <div>Portfolio Content</div>;
+        return <Portfolio />;
       case "education":
         return <Education />;
 
@@ -97,6 +146,22 @@ export const ModalProvider = ({ children }) => {
         return <Canucks />;
       case "peaks":
         return <Peaks />;
+      case "paradise":
+        return <ParadisePaddles />;
+      case "ball":
+        return <MagicBall />;
+      case "shopping":
+        return <ShoppingList />;
+      case "fuelled":
+        return <FullyFuelled />;
+      case "pizza":
+        return <PizzaApp />;
+      case "oasis":
+        return <TheWildOasis />;
+      case "travel":
+        return <TravelApp />;
+      case "movie":
+        return <MoviesApp />;
       default:
         return null;
     }

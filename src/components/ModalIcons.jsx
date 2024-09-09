@@ -17,7 +17,11 @@ function ModalIcons({ where }) {
           (where === "homepage" &&
             ["about", "portfolio", "education", "work"].includes(key)) ||
           (where === "work" &&
-            ["zoe", "nimmo", "canucks", "peaks"].includes(key))
+            ["zoe", "nimmo", "canucks", "peaks"].includes(key)) ||
+          (where === "personalportfolio" &&
+            ["paradise", "ball", "shopping", "fuelled"].includes(key)) ||
+          (where === "courseportfolio" &&
+            ["pizza", "oasis", "travel", "movie"].includes(key))
         ) {
           return (
             <div key={key}>

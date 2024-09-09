@@ -12,7 +12,7 @@ function ModalHeading({ name, icon, onClose, isDragging }) {
     >
       <div className="flex gap-[5px]">
         <img src={`icons/${icon}`} alt="icon" className="w-[25px]" />
-        <p>{name}</p>
+        <p className="text-primary-white tracking-wider">{name}</p>
       </div>
 
       <button

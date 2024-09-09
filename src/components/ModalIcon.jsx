@@ -1,15 +1,28 @@
 function ModalIcon({ name, icon, onClick, where }) {
+  const nameStyles = {
+    "Movie App": "ml-[10px] w-[55px] mb-[10px]",
+    "Travel App": "ml-[10px] w-[65px]",
+    "The Wild Oasis": "ml-[10px] w-[70px] mb-[-5px]",
+    "Nimmo Bay": "mb-[10px]",
+    "Fully Fuelled": "w-[75px] mb-[-10px]",
+    "Shopping List": "mb-[15px]",
+    "8-Ball": "w-[65px]",
+    "Paradise Paddles": "w-[65px]",
+    "Pizza App": "w-[65px]",
+  };
+
+  const imgSizeClass = where === "work" ? "w-[70px]" : "w-[50px]";
+  const nameSpecificClass = nameStyles[name] || ""; // Default to empty string if no match
+
   return (
     <div
-      className="flex flex-col items-center max-w-[100px]  hover:cursor-pointer hover:scale-105 hover:text-primary-blue transition-all duration-400"
+      className={`flex flex-col items-center max-w-[100px] hover:cursor-pointer hover:scale-105 hover:text-primary-blue transition-all duration-400 ${nameSpecificClass}`}
       onClick={onClick}
     >
       <img
         src={`icons/${icon}`}
         alt="icon"
-        className={`${where === "work" ? "w-[70px]" : "w-[50px] "} ${
-          name === "Nimmo Bay" && "mb-[10px]"
-        }`}
+        className={`${imgSizeClass} ${nameSpecificClass}`}
       />
       <p className="text-center">{name}</p>
     </div>
