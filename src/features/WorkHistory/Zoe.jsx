@@ -6,7 +6,7 @@ function Zoe() {
       title="Customer Support Associate"
       date="06/2023 - Present"
     >
-      <div className="flex flex-col gap-[15px]">
+      <div className="flex flex-col gap-[20px] ">
         <p>
           In my role at Zoe Nutrition, I provide comprehensive support to
           customers experiencing issues with our app and other technical

@@ -5,7 +5,7 @@ function Canucks() {
   return (
     <div className="flex flex-col gap-[20px] ">
       <WorkHistoryInfo title="Hospitality Supervisor" date="02/2022 - 11/2022">
-        <div className="flex flex-col gap-[15px]">
+        <div className="flex flex-col gap-[20px]">
           <p>
             As a Hospitality Supervisor at Rogers Arena, I supervised bar
             operations and ensured compliance with all regulations and company

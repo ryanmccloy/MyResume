@@ -20,7 +20,7 @@ function AboutMe() {
 
   return (
     <div className="flex flex-col gap-[20px] overflow-x-hidden">
-      <div className="flex flex-col gap-[15px]">
+      <div className="flex flex-col gap-[20px] tracking-wider ">
         {paragraphs.map((p) => (
           <p key={p}>{p}</p>
         ))}

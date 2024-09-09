@@ -5,7 +5,7 @@ function Peaks() {
   return (
     <div className="flex flex-col gap-[20px] ">
       <WorkHistoryInfo title="Front Office Supervisor" date="06/2021 - 01/2022">
-        <div className="flex flex-col gap-[15px]">
+        <div className="flex flex-col gap-[20px]">
           <p>
             As a Front Desk Supervisor at Peaks Hotel and Suites in Banff, I
             managed front desk operations to ensure a seamless guest experience.
