@@ -1,6 +1,6 @@
 function ModalIcon({ name, icon, onClick, where }) {
   const nameStyles = {
-    "Movie App": "ml-[10px] w-[55px] mb-[10px]",
+    "Movie App": "ml-[15px] w-[55px] mb-[10px]",
     "Travel App": "ml-[10px] w-[65px]",
     "The Wild Oasis": "ml-[10px] w-[70px] mb-[-5px]",
     "Nimmo Bay": "mb-[10px]",

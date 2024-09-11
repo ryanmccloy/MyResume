@@ -54,7 +54,7 @@ function Modal({ name, icon, children, onClose, onClick, isActive }) {
           onClose={onClose}
           isDragging={isDragging}
         />
-        <div className="bg-primary-white text-primary-black overflow-y-auto p-sm">
+        <div className="bg-primary-white text-primary-black overflow-y-auto p-sm scroll-smooth">
           {children}
         </div>
       </div>

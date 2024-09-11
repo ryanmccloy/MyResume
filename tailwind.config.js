@@ -26,6 +26,9 @@ export default {
         sm: "5px",
         md: "10px",
       },
+      screens: {
+        "custom-sm": "780px", // Define custom breakpoint at 780px
+      },
     },
   },
   plugins: [],

@@ -20,6 +20,11 @@ body {
   overflow: hidden;
 }
 
+.scrollable-container {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+
 .W95Border {
   border-left: 2px solid var(--primary-white);
   border-top: 2px solid var(--primary-white);
@@ -38,6 +43,59 @@ body {
   flex-direction: column;
   gap: 20px;
   letter-spacing: 0.05em;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.portfolio-sectionStyling {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  letter-spacing: 0.05em; /* tracking-wider equivalent */
+}
+
+.portfolio-headerStyling {
+  font-size: 22px; /* text-main-lg equivalent */
+  border-bottom: 2px solid var(--primary-light-gray);
+  padding-bottom: 10px;
+}
+
+.portfolio-hoverStyling {
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.portfolio-hoverStyling:hover {
+  color: var(--primary-blue);
+}
+
+.portfolio-underline {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.portfolio-smallerText {
+  font-size: 14px; /* text-main-sm equivalent */
+}
+
+.portfolio-liStyling {
+  padding-left: 25px;
+}
+
+.portfolio-ulStyling {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.portfolio-olStyling {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .slick-prev,
