@@ -13,7 +13,7 @@ function ContactMe() {
     <>
       {isOpen && <ContactsBox handleClose={handleOpen} />}
       <button
-        className="W95Border py-sm pr-[5px] flex justify-evenly w-[150px]"
+        className="W95Border py-sm pr-[5px] flex justify-evenly w-[150px] hover:text-primary-blue transition-all duration-300"
         onClick={handleOpen}
       >
         <img
