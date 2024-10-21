@@ -5,7 +5,7 @@ function ModalIcon({ name, icon, onClick, where }) {
     "The Wild Oasis": "ml-[10px] w-[70px] mb-[-5px]",
     "Nimmo Bay": "mb-[10px]",
     "Fully Fuelled": "w-[75px] mb-[-10px]",
-    "Shopping List": "mb-[15px]",
+    "Weather App": "mb-[15px]",
     "8-Ball": "w-[65px]",
     "Paradise Paddles": "w-[65px]",
     "Pizza App": "w-[65px]",
