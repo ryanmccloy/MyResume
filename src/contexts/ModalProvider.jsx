@@ -10,12 +10,12 @@ import Peaks from "../features/WorkHistory/Peaks";
 import Portfolio from "../features/Portfolio/Portfolio";
 import ParadisePaddles from "../features/Portfolio/ParadisePaddles";
 import MagicBall from "../features/Portfolio/MagicBall";
-import ShoppingList from "../features/Portfolio/ShoppingList";
 import FullyFuelled from "../features/Portfolio/FullyFuelled";
 import PizzaApp from "../features/Portfolio/PizzaApp";
 import TheWildOasis from "../features/Portfolio/TheWildOasis";
 import TravelApp from "../features/Portfolio/TravelApp";
 import MoviesApp from "../features/Portfolio/MoviesApp";
+import WeatherApp from "../features/Portfolio/WeatherApp";
 
 const ResumeModalContext = createContext();
 
@@ -60,9 +60,9 @@ const resumeModals = {
     name: "Paradise Paddles",
     icon: "pp-icon.png",
   },
-  shopping: {
-    name: "Shopping List",
-    icon: "shopping-icon.png",
+  weather: {
+    name: "Weather App",
+    icon: "weather-app.png",
   },
   fuelled: {
     name: "Fully Fuelled",
@@ -98,7 +98,7 @@ export const ModalProvider = ({ children }) => {
     peaks: false,
     paradise: false,
     ball: false,
-    shopping: false,
+    weather: false,
     fuelled: false,
     pizza: false,
     oasis: false,
@@ -150,8 +150,8 @@ export const ModalProvider = ({ children }) => {
         return <ParadisePaddles />;
       case "ball":
         return <MagicBall />;
-      case "shopping":
-        return <ShoppingList />;
+      case "weather":
+        return <WeatherApp />;
       case "fuelled":
         return <FullyFuelled />;
       case "pizza":
