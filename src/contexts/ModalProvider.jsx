@@ -8,7 +8,7 @@ import Canucks from "../features/WorkHistory/Canucks";
 import Zoe from "../features/WorkHistory/Zoe";
 import Peaks from "../features/WorkHistory/Peaks";
 import Portfolio from "../features/Portfolio/Portfolio";
-import ParadisePaddles from "../features/Portfolio/ParadisePaddles";
+import Bored from "../features/Portfolio/Bored";
 import MagicBall from "../features/Portfolio/MagicBall";
 import FullyFuelled from "../features/Portfolio/FullyFuelled";
 import PizzaApp from "../features/Portfolio/PizzaApp";
@@ -56,9 +56,9 @@ const resumeModals = {
     name: "8-Ball",
     icon: "8-ball-icon.png",
   },
-  paradise: {
-    name: "Paradise Paddles",
-    icon: "pp-icon.png",
+  bored: {
+    name: "I'm Bored",
+    icon: "bored.png",
   },
   weather: {
     name: "Weather App",
@@ -96,7 +96,7 @@ export const ModalProvider = ({ children }) => {
     nimmo: false,
     canucks: false,
     peaks: false,
-    paradise: false,
+    bored: false,
     ball: false,
     weather: false,
     fuelled: false,
@@ -146,8 +146,8 @@ export const ModalProvider = ({ children }) => {
         return <Canucks />;
       case "peaks":
         return <Peaks />;
-      case "paradise":
-        return <ParadisePaddles />;
+      case "bored":
+        return <Bored />;
       case "ball":
         return <MagicBall />;
       case "weather":

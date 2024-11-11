@@ -4,10 +4,10 @@ function ModalIcon({ name, icon, onClick, where }) {
     "Travel App": "ml-[10px] w-[65px]",
     "The Wild Oasis": "ml-[10px] w-[70px] mb-[-5px]",
     "Nimmo Bay": "mb-[10px]",
-    "Fully Fuelled": "w-[75px] mb-[-10px]",
-    "Weather App": "mb-[15px]",
-    "8-Ball": "w-[65px]",
-    "Paradise Paddles": "w-[65px]",
+    "Fully Fuelled": "w-[75px] ",
+    "Weather App": "mb-[15px] mt-[5px]",
+    "8-Ball": "w-[65px] mb-[5px] mt-[3px]",
+    "I'm Bored": "w-[75px]",
     "Pizza App": "w-[65px]",
   };
 

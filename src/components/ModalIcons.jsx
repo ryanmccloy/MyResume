@@ -19,7 +19,7 @@ function ModalIcons({ where }) {
           (where === "work" &&
             ["zoe", "nimmo", "canucks", "peaks"].includes(key)) ||
           (where === "personalportfolio" &&
-            ["paradise", "ball", "weather", "fuelled"].includes(key)) ||
+            ["bored", "ball", "weather", "fuelled"].includes(key)) ||
           (where === "courseportfolio" &&
             ["pizza", "oasis", "travel", "movie"].includes(key))
         ) {

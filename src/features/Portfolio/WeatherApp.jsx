@@ -69,7 +69,7 @@ function WeatherApp() {
             </ul>
           </li>
           <li>
-            <h3>4. Responsive design</h3>
+            <h3>5. Responsive design</h3>
             <ul>
               <li className="portfolio-liStyling portfolio-smallerText">
                 The app is fully responsive and works on different screen sizes
