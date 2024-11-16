@@ -4,7 +4,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Firebase configuration object
 const firebaseConfig = {
-  apiKey: "AIzaSyCS2DIJo-s31m13-gnS0KkyEw_BadVMZkQ",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "my-resume-b86a9.firebaseapp.com",
   projectId: "my-resume-b86a9",
   storageBucket: "my-resume-b86a9.appspot.com",
