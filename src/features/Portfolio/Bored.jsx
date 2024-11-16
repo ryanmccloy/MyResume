@@ -41,8 +41,9 @@ function Bored() {
             <h3>2. Search by Number of Participants</h3>
             <ul>
               <li className="portfolio-liStyling portfolio-smallerText">
-                Enter the number of people involved, whether you're flying solo
-                or with friends, and find activities suited to the group size.
+                Enter the number of people involved, whether you&apos;re flying
+                solo or with friends, and find activities suited to the group
+                size.
               </li>
             </ul>
           </li>
@@ -51,8 +52,8 @@ function Bored() {
             <h3>3. Surprise Me</h3>
             <ul>
               <li className="portfolio-liStyling portfolio-smallerText">
-                Feeling spontaneous? Click "Surprise Me" to get a random
-                activity suggestion!
+                Feeling spontaneous? Click &quot;Surprise Me&quot; to get a
+                random activity suggestion!
               </li>
             </ul>
           </li>
@@ -104,8 +105,8 @@ function Bored() {
             <h3>3. Surprise Me!</h3>
             <ul>
               <li className="portfolio-liStyling portfolio-smallerText">
-                Click the "Surprise Me" button for a random suggestion if you’re
-                open to any activity.
+                Click the &quot;Surprise Me&quot; button for a random suggestion
+                if you’re open to any activity.
               </li>
             </ul>
           </li>

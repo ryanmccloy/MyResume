@@ -54,7 +54,7 @@ function WeatherApp() {
             <h3>3. Sunrise and sunset times</h3>
             <ul>
               <li className="portfolio-liStyling portfolio-smallerText">
-                Shows today's sunrise and sunset times for the selected
+                Shows today&apos;s sunrise and sunset times for the selected
                 location.
               </li>
             </ul>
