@@ -60,7 +60,7 @@ Ensure you have the following installed on your machine:
 
 1. Clone the repository:
 
-- git clone https://github.com/yourusername/online-resume.git
+- git clone https://github.com/ryanmccloy/MyResume
 - cd online-resume
 
 2. Install dependencies:
